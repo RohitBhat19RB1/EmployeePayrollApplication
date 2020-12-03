@@ -27,7 +27,7 @@
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" 
                        placeholder="Your name.." required>
-
+                <error-output class="name-error" for="name"></error-output>
             </div>
 
              <!---- UC 3  ---->
@@ -158,6 +158,15 @@
  </form>
  
  <script>
+
+        const name = document.querySelector('#name');
+        const nameError = document.querySelector('.name-error');
+        name.addEventListener('input', function() {
+            let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+            if (nameRegex.test(name.value))
+            nameError.textContent = "";
+            else nameError.textContent = "Name is Incorrect";
+        });
 
         const salary = document.querySelector('#salary');
         const output = document.querySelector('.salary-output');
