@@ -159,10 +159,12 @@ select {
     text-decoration: none;
     text-align: center;
 }
-
+#name-error {
+    margin-left: 20%;
+}
 error-output {
     font-size: 12px;
-    font-style: italic;
+    font-family: Roboto;
     color: red;
 }
 
