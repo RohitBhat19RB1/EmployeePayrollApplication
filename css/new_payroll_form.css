@@ -101,7 +101,7 @@ label {
 /* --- UC 3 --- */
 .profile-radio-content {
     display: flex;
-    flex-direction: row;
+    flex-flow: wrap;
 }
 
 .profile-radio-content > label {
@@ -161,9 +161,9 @@ select {
 }
 
 error-output {
-    margin-left: 10px;
+    margin-left: 20%;
     font-size: 12px;
-    font-style: italic;
+    font-style: roboto;
     color: red;
 }
 
@@ -204,5 +204,30 @@ error-output {
     .button-content {
         flex-direction: column-reverse;
         align-items: flex-start;
+    }
+    .row-content {
+        display: block;
+    }
+    .submit-reset {
+        display: flex;
+        flex-direction: column;
+    }
+    .submitButton {
+        margin-bottom: 20px;
+    }
+
+
+}
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .label {
+        width: 40%;
+        font-size: 14px;
+    }
+    .profile-radio-button {
+        flex-flow: column-reverse;
     }
 }
