@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="../css/new_payroll_form.css">
     <title>Employee payroll form</title>
     <script defer src="../js/EmployeePayroll.js"></script>
@@ -62,26 +62,40 @@
       <!---- UC 4  ---->
       <div class="row-content">
           <label class="label text" for="gender">Gender</label>
-          <div>
+          <div class="genderone">
+          <label>
               <input type="radio" id="male" name="gender" value="male">
               <label class="text" for="male">Male</label>
+          </label>
+          <label>
               <input type="radio" id="female" name="gender" value="female">
               <label class="text" for="female">Female</label>
+          </label>
           </div>
       </div>
       <div class="row-content">
         <label class="label text" for="department">Department</label>
-        <div>
+        <div class="departmentone">
+            <label>
             <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
             <label class="text" for="hr">HR</label>
+            </label>
+            <label>
             <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">
             <label class="text" for="sales">Sales</label>
+            </label>
+            <label>
             <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">
             <label class="text" for="finance">Finance</label>
+            </label>
+            <label>
             <input class="checkbox" type="checkbox" id="engineer" name="department" value="Engineer">
             <label class="text" for="engineer">Engineer</label>
+            </label>
+            <label>
             <input class="checkbox" type="checkbox" id="others" name="department" value="Others">
             <label class="text" for="others">Others</label>
+            </label>
         </div>
     </div>
      <div class="row-content">
