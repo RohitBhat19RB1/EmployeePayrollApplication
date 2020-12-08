@@ -157,3 +157,22 @@ td img {
     font-weight: 300;
     margin-bottom: 8px;
 }
+
+@media only screen and (max-width: 360px) {
+    .add-button {
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+        padding: 0px -2px;
+        border-radius: 0%;
+        b;
+
+
+    }
+}
+@media only screen and (max-width: 240px) {
+    .add-button {
+        font-size: 0px;
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+}
