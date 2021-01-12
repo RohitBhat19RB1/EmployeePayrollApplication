@@ -231,7 +231,6 @@ error-output {
         flex-grow: 1;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-bottom: 20px;
     }
     .submitButton {
         margin: 0;
